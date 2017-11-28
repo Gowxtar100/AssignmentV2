@@ -19,6 +19,6 @@ public class keeper1 : MonoBehaviour {
         {
             transform.position -= new Vector3(0.0f, speed * Time.deltaTime, 0.0f);
         }
-
+        this.GetComponent<Rigidbody2D>().freezeRotation = true;
     }
 }
