@@ -11,17 +11,18 @@ public class GoalPost2 : MonoBehaviour {
     public int scorenumber;
     public int maxscore;
 
-    int scoretwo;
+    
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
     
 	void Update () {
-        if (scoretwo == maxscore)
+        if (ScoreStorage.Scoretwo == maxscore)
         {
+
             SceneManager.LoadScene(sceneName);
         }
 
@@ -29,11 +30,12 @@ public class GoalPost2 : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
-            scoretwo = scoretwo + scorenumber;
-            player2score.text = ("Score : " + scoretwo);
 
-        
+        ScoreStorage.Scoretwo = ScoreStorage.Scoretwo + scorenumber;
+        player2score.text = ScoreStorage.Scoretwo.ToString();
+
+
+
     }
 
 

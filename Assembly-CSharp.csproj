@@ -50,7 +50,8 @@
      <Compile Include="Assets\Scripts\GoalPost2.cs" />
      <Compile Include="Assets\Scripts\Goalpost.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
-     <Compile Include="Assets\Scripts\PlayerScores.cs" />
+     <Compile Include="Assets\Scripts\MovingPlayers.cs" />
+     <Compile Include="Assets\Scripts\ScoreStorage.cs" />
      <Compile Include="Assets\Scripts\keeper1.cs" />
      <Compile Include="Assets\Scripts\keeper2.cs" />
  <Reference Include="UnityEngine.UI">

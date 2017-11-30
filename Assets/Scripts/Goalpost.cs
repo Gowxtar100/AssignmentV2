@@ -10,24 +10,31 @@ public class Goalpost : MonoBehaviour {
     public string sceneName;
     public int scorenumber;
     public int maxscore;
-    int scoreone;
+
+    
 
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (scoreone == maxscore)
+        if (ScoreStorage.Scoreone == maxscore)
         {
+            
             SceneManager.LoadScene(sceneName);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        scoreone = scoreone + scorenumber ;
-        player1score.text = ("Score : " + scoreone);
+        
+        ScoreStorage.Scoreone = ScoreStorage.Scoreone + scorenumber ;
+        player1score.text = ScoreStorage.Scoreone.ToString();
+
     }
+
+    
+
 }

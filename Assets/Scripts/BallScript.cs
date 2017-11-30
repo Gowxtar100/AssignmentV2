@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BallScript : MonoBehaviour {
-    public GameObject ball;
+   
     keeper1 keeper1; //Loads the Keeper1 class
     Vector3 keeperBallPosDiff;
    
@@ -26,7 +26,7 @@ public class BallScript : MonoBehaviour {
         if (Input.GetKey(KeyCode.Mouse2) && !gamestarted) //if middle mouse button is pressed and game has not started
         {
             gamestarted = true;
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(10f, 0f); //Makes the ball shoot out with velocity 
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(700f, 0f); //Makes the ball shoot out with velocity 
         }
 
 
