@@ -15,7 +15,7 @@ public class Goalpost : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+        player1score.text = ScoreStorage.Scoreone.ToString();
     }
 	
 	// Update is called once per frame
