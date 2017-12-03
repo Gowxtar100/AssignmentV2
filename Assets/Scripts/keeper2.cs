@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class keeper2 : MonoBehaviour {
     public float speed = 10f;
-    
+    public static int positionIterations;
     // Use this for initialization
     void Start () {
-		
-	}
+        Physics2D.positionIterations = 20;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,9 +23,15 @@ public class keeper2 : MonoBehaviour {
         }
         this.GetComponent<Rigidbody2D>().freezeRotation = true;
     }
-  
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag.Equals("colliderv2") == true)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+        }
+    }
 
-   
 
-    
+
+
 }

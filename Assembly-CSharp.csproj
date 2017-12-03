@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallScript.cs" />
+     <Compile Include="Assets\Scripts\ColliderScript.cs" />
      <Compile Include="Assets\Scripts\GoalPost2.cs" />
      <Compile Include="Assets\Scripts\Goalpost.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
