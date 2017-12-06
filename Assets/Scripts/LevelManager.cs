@@ -20,4 +20,9 @@ public class LevelManager : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void Quit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+        
+    }
 }

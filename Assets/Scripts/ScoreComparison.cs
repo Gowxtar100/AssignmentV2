@@ -17,6 +17,9 @@ public class ScoreComparison : MonoBehaviour {
         {
             Winner.text = "Player 1 wins";
         }
+
+        ScoreStorage.Scoreone = 0;
+        ScoreStorage.Scoretwo = 0;
     }
 	
 	// Update is called once per frame

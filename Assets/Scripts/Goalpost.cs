@@ -20,7 +20,7 @@ public class Goalpost : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (ScoreStorage.Scoreone == maxscore)
+        if (ScoreStorage.Scoreone >= maxscore)
         {
             
             SceneManager.LoadScene(sceneName);
